@@ -29,8 +29,8 @@ private:
         
         std::mutex threadExecuteMutex;
         std::condition_variable threadCV;
-        bool threadReadyToStart;
-        bool threadStarted;
+        bool threadReadyToStart = false;
+        bool threadStarted = false;
 
 };
 
