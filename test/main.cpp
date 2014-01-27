@@ -1,7 +1,7 @@
 #include "testing.h"
 
 int main() {
-        logxx::SetLogLevel(logxx::debug);
+        logxx::GlobalLogLevel(logxx::debug);
         bool res(true);
         thread_test::Testing testing;
         res &= testing.RunTest();

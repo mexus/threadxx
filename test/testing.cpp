@@ -27,8 +27,7 @@ namespace thread_test {
         
         bool Testing::RunTest() const {
                 S_LOG("RunTest");
-//                logxx::SetLogLevel(logxx::warning);
-                logxx::SetLogLevel(logxx::debug);
+                logxx::GlobalLogLevel(logxx::debug);
                 log(logxx::info) << "Starting tests" << logxx::endl;
                 bool res(true);
                 res = TestStartJoin() && TestDestruction();
