@@ -2,6 +2,7 @@
 #define	THREAD_REALISATION_H
 
 #include "../main/threadxx/threadxx.h"
+using namespace threadxx;
 #include <chrono>
 
 namespace thread_test {
